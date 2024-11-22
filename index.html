@@ -3,9 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ABC Property & Construction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .service-item, .property-item {
+            display: inline-block;
+            width: 48%;
+            margin: 1%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .service-item:hover, .property-item:hover {
+            transform: scale(1.05);
+        }
+        .service-item h3, .property-item h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .service-item p, .property-item p {
+            font-size: 16px;
+            color: #666;
+        }
+        .property-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .testimonial {
+            background-color: #ddd;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .testimonial p {
+            font-size: 18px;
+            color: #333;
+            font-style: italic;
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+        .testimonial span {
+            display: block;
+            font-weight: bold;
+            color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .service-item, .property-item {
+                width: 100%;
+            }
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>ABC Property & Construction</h1>
+        <p>Your Trusted Property Dealer & Construction Partner</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#properties">Properties</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to ABC Property & Construction</h2>
+            <p>Your one-stop solution for property buying, selling, and construction. With years of experience and a dedication to quality, we are here to turn your dreams into reality. Whether you're looking for a new home or need construction services, we’ve got you covered.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-item">
+                <h3>Property Deals</h3>
+                <p>We help you find the perfect property, whether you're buying, selling, or renting. We have a wide range of properties to suit all budgets.</p>
+            </div>
+            <div class="service-item">
+                <h3>Construction Services</h3>
+                <p>We specialize in residential, commercial, and industrial construction. Our skilled team delivers projects on time and within budget, with a focus on quality.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="properties">
+        <div class="container">
+            <h2>Featured Properties</h2>
+            <div class="property-item">
+                <img src="https://via.placeholder.com/600x400" alt="Property 1">
+                <h3>Luxury Villa in Downtown</h3>
+                <p>Spacious 4-bedroom villa with a beautiful garden, located in the heart of the city. Price: $500,000</p>
+            </div>
+            <div class="property-item">
+                <img src="https://via.placeholder.com/600x400" alt="Property 2">
+                <h3>Modern Office Space</h3>
+                <p>Premium office space in a prime location with all amenities included. Price: $2,000/month</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonial">
+        <div class="testimonial">
+            <p>"ABC Property & Construction helped us find the perfect home and built it exactly to our specifications. Their service was excellent, and we couldn't be happier!"</p>
+            <span>John & Sarah Thompson</span>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>ABC Property & Construction has been a trusted name in the real estate and construction industry for over 15 years. We are committed to providing exceptional service, whether you are buying your first home or building your dream property. Our team of experts ensures that every project is handled with care and precision.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have any questions? We'd love to hear from you!</p>
+            <p>Email: <a href="mailto:info@abcproperty.com">info@abcproperty.com</a></p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Main Street, City, Country</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ABC Property & Construction | <a href="#home">Back to Top</a></p>
+    </footer>
 </body>
 </html>
